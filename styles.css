@@ -53,6 +53,77 @@ html {
   text-decoration:line-through;
 }
 
+/* Menú mobile */
+.linea {
+  height: 10%;
+  width: 75%;
+  background-color: #000;
+  border-radius: 2px;
+  position: absolute;
+  transition: all 0.9s ease;
+  top: 50%;
+  left: 350px;
+}
+
+.linea-top {
+  top: 25%;
+}
+
+.linea-low {
+  top: 75%;
+}
+
+.label-burger {
+  width: 30px;
+  display: inline-block;
+  height: 50px;
+  padding: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+#burger {
+  display: none;
+}
+
+.custom-checkbox:checked~.label-burger .linea-med {
+  opacity: 1;
+}
+
+.custom-checkbox:checked~.menu-desplegable {
+  transform: translate(0);
+}
+
+.menu-desplegable {
+  height: 200px;
+  width: 100%;
+  background-color: blue;
+  color: #fff;
+  cursor: pointer;
+
+  transition: all 0.4s ease;
+  transform: translate(100%);
+}
+
+
+.menu-desplegable a{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+  background-color: blue;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'IBM Plex Sans';
+  border-bottom: 1px solid #fff;
+}
+
+
+
+.mobile{
+  display: none;
+}
+
 .container{
   /* margin-left: 100px; */
   /* margin-right: 100px; */
@@ -267,7 +338,21 @@ footer .redes a:hover {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
+.mobile{
+  display: block;
+}
+
+.menu{
+  display: none;
+}
+
+.menu-container {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
 .principal{
   margin: 80px 20px;
 }
@@ -277,7 +362,7 @@ footer .redes a:hover {
 }
 
 .principal a{
-  padding: 16px 120px;
+  padding: 16px 50px;
 }
 
 .principal p{
@@ -306,6 +391,7 @@ footer .redes a:hover {
   width: 100%;
   margin-right: 0px;
   margin-top: 30px;
+  padding-right: 0px;
   height: 232px;
 }
 
@@ -358,4 +444,46 @@ footer .texto{
   margin-bottom: 16px;
 }
 
+}
+
+@media screen and (min-width: 401px) and (max-width: 900px){
+.principal{
+  margin: 120px 0px 20px 20px;
+}
+
+.principal p {
+  width: 90%;
+}
+
+.principal a {
+  padding: 16px 120px;
+}
+
+.episodios {
+  padding: 150px 0 200px 0;
+}
+
+.episodios h2, .invitados h2, .temas h2{
+  margin-left: 100px;
+}
+
+.nosotros {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.podcasts {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.podcasts iframe {
+  width: 100%;
+  margin-right: 0px;
+  margin-top: 30px;
+  padding-right: 0px;
+  height: 232px;
+}
 }
