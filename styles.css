@@ -32,7 +32,7 @@ html {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  top: 10px;
+  top: 25px;
 }
 
 .menu li{
@@ -62,7 +62,6 @@ html {
   position: absolute;
   transition: all 0.9s ease;
   top: 50%;
-  left: 350px;
 }
 
 .linea-top {
@@ -352,9 +351,38 @@ footer .redes a:hover {
     margin-right: 0px;
 }
 
+.label-burger {
+    width: 100%;
+    /* display: inline-block; */
+    height: 50px;
+    padding: 2px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.linea{
+  height: 10%;
+  width: 30px;
+  background-color: #000;
+  border-radius: 2px;
+  position: absolute;
+  transition: all 0.9s ease;
+  left: none;
+}
+
+#logo {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
 
 .principal{
   margin: 80px 20px;
+  margin-top: -130px;
 }
 
 .principal h1{
@@ -447,8 +475,53 @@ footer .texto{
 }
 
 @media screen and (min-width: 401px) and (max-width: 900px){
+.mobile{
+  display: block;
+}
+
+.menu{
+  display: none;
+}
+
+.menu-container {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.label-burger {
+    width: 100%;
+    /* display: inline-block; */
+    height: 50px;
+    padding: 2px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.linea{
+  height: 10%;
+  width: 30px;
+  background-color: #000;
+  border-radius: 2px;
+  position: absolute;
+  transition: all 0.9s ease;
+  left: none;
+}
+
+
+#logo {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+
 .principal{
   margin: 120px 0px 20px 20px;
+  margin-top: -130px;
 }
 
 .principal p {
