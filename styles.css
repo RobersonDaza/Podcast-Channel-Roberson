@@ -335,13 +335,21 @@ footer .redes a:hover {
 }
 
 .menu-container {
-    margin-left: 0px;
-    margin-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.menu-desplegable a{
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.menu-desplegable a:hover{
+  color: #00F3BB;
+  text-decoration: line-through;
 }
 
 .label-burger {
     width: 100%;
-    /* display: inline-block; */
     height: 50px;
     padding: 2px;
     cursor: pointer;
@@ -369,7 +377,7 @@ footer .redes a:hover {
 
 .principal{
   margin: 80px 20px;
-  margin-top: -130px;
+  margin-top: -180px;
 }
 
 .principal h1{
@@ -459,6 +467,10 @@ footer .texto{
   margin-bottom: 16px;
 }
 
+.redes {
+  padding-bottom: 20px;
+}
+
 }
 
 @media screen and (min-width: 401px) and (max-width: 900px){
@@ -475,9 +487,18 @@ footer .texto{
     margin-left: 0px;
     margin-right: 0px;
 }
+
+.menu-desplegable a{
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.menu-desplegable a:hover{
+  color: #00F3BB;
+  text-decoration: line-through;
+}
+
 .label-burger {
     width: 100%;
-    /* display: inline-block; */
     height: 50px;
     padding: 2px;
     cursor: pointer;
@@ -496,7 +517,6 @@ footer .texto{
   left: none;
 }
 
-
 #logo {
     width: 36px;
     height: 36px;
@@ -505,11 +525,9 @@ footer .texto{
     left: 10px;
 }
 
-
-
 .principal{
   margin: 120px 0px 20px 20px;
-  margin-top: -130px;
+  margin-top: -180px;
 }
 
 .principal p {
@@ -543,8 +561,6 @@ footer .texto{
 }
 
 .podcasts {
-  display: flex;
-  flex-wrap: wrap;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -560,9 +576,23 @@ footer .texto{
 .container-temas {
   margin-left: 50px;
   margin-right: 50px;
+  flex-wrap: wrap;
   }
+
+.container-temas .items {
+  width: 260px;
+  margin-bottom: 50px;
+}
 
 .container-temas h4 {
   font-size: 18px;
+  }
+
+footer{
+  flex-wrap: wrap;
+}
+
+footer .texto p {
+  margin-bottom: 10px;
   }
 }
