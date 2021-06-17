@@ -553,7 +553,10 @@ footer .texto{
   flex-direction: column;
 }
 .image-nos img {
-  width: 100%;
+  width: 50%;
+  display: block;
+  margin: auto;
+  margin-top: -140px;
 }
 
 .galeria img {
@@ -574,19 +577,19 @@ footer .texto{
 }
 
 .container-temas {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 90px;
+  margin-right: 90px;
   flex-wrap: wrap;
   }
 
 .container-temas .items {
   width: 260px;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 
-.container-temas h4 {
-  font-size: 18px;
-  }
+.novedades{
+  margin-top: 20px;
+}
 
 footer{
   flex-wrap: wrap;
